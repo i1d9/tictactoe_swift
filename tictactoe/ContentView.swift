@@ -7,15 +7,24 @@
 
 import SwiftUI
 
+
+class Board : ObservableObject, Identifiable{
+    @Published var player : String
+    var id : UUID
+    
+    init(player: String) {
+        self.player = player
+        self.id = UUID()
+    }
+}
 struct ContentView: View {
+    private var threeColumnGrid = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        
+        Playview()
+        
+        
     }
 }
 

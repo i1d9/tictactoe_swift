@@ -11,6 +11,9 @@
 		F282619B292D3BF000476B3F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F282619A292D3BF000476B3F /* ContentView.swift */; };
 		F282619D292D3BF100476B3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F282619C292D3BF100476B3F /* Assets.xcassets */; };
 		F28261A1292D3BF100476B3F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28261A0292D3BF100476B3F /* Preview Assets.xcassets */; };
+		F28261A8292D3C4100476B3F /* Playview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28261A7292D3C4100476B3F /* Playview.swift */; };
+		F28261AB292D696100476B3F /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28261AA292D696100476B3F /* Move.swift */; };
+		F28261AD292D697900476B3F /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28261AC292D697900476B3F /* Box.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		F282619C292D3BF100476B3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F282619E292D3BF100476B3F /* tictactoe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tictactoe.entitlements; sourceTree = "<group>"; };
 		F28261A0292D3BF100476B3F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F28261A7292D3C4100476B3F /* Playview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playview.swift; sourceTree = "<group>"; };
+		F28261AA292D696100476B3F /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
+		F28261AC292D697900476B3F /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +58,14 @@
 		F2826197292D3BF000476B3F /* tictactoe */ = {
 			isa = PBXGroup;
 			children = (
+				F28261A9292D694F00476B3F /* Model */,
 				F2826198292D3BF000476B3F /* tictactoeApp.swift */,
 				F282619A292D3BF000476B3F /* ContentView.swift */,
+				F28261AC292D697900476B3F /* Box.swift */,
 				F282619C292D3BF100476B3F /* Assets.xcassets */,
 				F282619E292D3BF100476B3F /* tictactoe.entitlements */,
 				F282619F292D3BF100476B3F /* Preview Content */,
+				F28261A7292D3C4100476B3F /* Playview.swift */,
 			);
 			path = tictactoe;
 			sourceTree = "<group>";
@@ -67,6 +76,14 @@
 				F28261A0292D3BF100476B3F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F28261A9292D694F00476B3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F28261AA292D696100476B3F /* Move.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F28261AB292D696100476B3F /* Move.swift in Sources */,
 				F282619B292D3BF000476B3F /* ContentView.swift in Sources */,
 				F2826199292D3BF000476B3F /* tictactoeApp.swift in Sources */,
+				F28261A8292D3C4100476B3F /* Playview.swift in Sources */,
+				F28261AD292D697900476B3F /* Box.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
